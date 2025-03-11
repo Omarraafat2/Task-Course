@@ -33,7 +33,6 @@ function App() {
   return (
     <>
       <main className="container mx-auto px-4">
-        {/* زر فتح المودال */}
         <div className="flex justify-end my-4">
           <Button
             className="bg-indigo-600 hover:bg-indigo-500 transition px-4 py-2 rounded-lg text-white shadow-md"
@@ -43,14 +42,12 @@ function App() {
           </Button>
         </div>
 
-        {/* قائمة المنتجات */}
         <div className="m-5 grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 xl:grid-cols-4 gap-6 p-4">
           {renderProductList}
         </div>
 
-        {/* المودال */}
         <Modal isOpen={isOpen} close={close} title="Add a new product">
-          <div className="space-y-4">
+          <form className="space-y-4">
             {renderFormInputList}
             <div className="flex items-center justify-end space-x-2 mt-4">
             <Button className="bg-green-600 hover:bg-green-500 px-4 py-2 text-white rounded-md transition">
@@ -63,7 +60,7 @@ function App() {
               Cancel
             </Button>
           </div>
-          </div>
+          </form>
           
         </Modal>
       </main>
