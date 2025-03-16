@@ -209,7 +209,7 @@ const App = () => {
   };
 
   return (
-    <main className="container">
+    <main className=" flex flex-col justify-center items-center min-h-screen p-4">
       <Button
         className="block bg-indigo-700 hover:bg-indigo-800 mx-auto my-10 px-10 font-medium"
         onClick={openModal}
